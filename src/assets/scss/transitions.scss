@@ -1,0 +1,77 @@
+.dropdown-fade-enter-active,
+.dropdown-fade-leave-active {
+    visibility: visible;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    pointer-events: all;
+    transition: all 0.3s linear;
+}
+.dropdown-fade-enter-from,
+.dropdown-fade-leave-to {
+    visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    pointer-events: none;
+}
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.4s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+.fade-enter-to,
+.fade-leave-from {
+    opacity: 1;
+}
+.fadeUp-enter-active,
+.fadeUp-leave-active {
+    visibility: visible;
+    opacity: 1;
+    transition:
+        visibility 0.3s ease-out,
+        opacity 0.3s ease-out;
+    .modal__content {
+        opacity: 1;
+        transform: translateY(0);
+        transition: all 0.3s ease-out;
+    }
+}
+.fadeUp-enter-from,
+.fadeUp-leave-to {
+    visibility: hidden;
+    opacity: 0;
+    .modal__content {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+.fadeRight-enter-active,
+.fadeRight-leave-active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease-out;
+}
+.fadeRight-enter-from,
+.fadeRight-leave-to {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100px);
+}
+.preloader-fade-enter-active,
+.preloader-fade-leave-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    .preloader__items {
+        display: none;
+    }
+}
+.preloader-fade-enter-from,
+.preloader-fade-leave-to {
+    visibility: hidden;
+    opacity: 0;
+    .preloader__items {
+        display: none;
+    }
+}

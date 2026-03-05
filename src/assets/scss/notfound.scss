@@ -1,0 +1,44 @@
+@use "vars";
+.notfound {
+    h1 {
+        font-size: 80px;
+        margin-bottom: 32px;
+        span {
+            display: block;
+            margin-top: 12px;
+        }
+    }
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .main-btn {
+        min-width: 250px;
+    }
+    &__img {
+        width: 220px;
+        height: 220px;
+        object-fit: contain;
+        margin-bottom: 56px;
+    }
+    @media (max-width: vars.$bp1) {
+        h1 {
+            font-size: 70px;
+        }
+        &__img {
+            margin-bottom: 40px;
+        }
+    }
+    @media (max-width: vars.$bp4) {
+        h1 {
+            font-size: 60px;
+        }
+        &__img {
+            margin-bottom: 32px;
+        }
+    }
+}

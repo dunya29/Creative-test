@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Методические рекомендации по заполнению грантовой заявки",
+        "link": {
+            "name": "polzovatelskoe-soglashenie.pdf",
+            "url": "/documents",
+            "type": "video"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Методические материалы по подготовке бюджета проекта",
+        "link": {
+            "name": "polzovatelskoe-soglashenie.pdf",
+            "url": "/static/files/docs/polzovatelskoe-soglashenie.pdf",
+            "type": "file"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Методические материалы по подготовке отчетности",
+        "link": {
+            "name": "polzovatelskoe-soglashenie.pdf",
+            "url": "/static/files/docs/polzovatelskoe-soglashenie.pdf",
+            "type": "file"
+        }
+    }
+]

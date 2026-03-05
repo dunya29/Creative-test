@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Методические рекомендации по заполнению грантовой заявки-1",
+        "docURL": [
+            {
+                "name": "polzovatelskoe-soglashenie.pdf",
+                "url": "/static/files/docs/polzovatelskoe-soglashenie.pdf"
+            }
+        ],
+        "orderId": 1
+    },
+    {
+        "id": 2,
+        "name": "Положение о предоставлении грантов-2",
+        "docURL": [
+            {
+                "name": "polzovatelskoe-soglashenie.pdf",
+                "url": "/static/files/docs/polzovatelskoe-soglashenie.pdf"
+            }
+        ],
+        "orderId": 2
+    },
+    {
+        "id": 3,
+        "name": "Методические рекомендации по заполнению грантовой заявки-3",
+        "docURL": [
+            {
+                "name": "polzovatelskoe-soglashenie.pdf",
+                "url": "/static/files/docs/polzovatelskoe-soglashenie.pdf"
+            }
+        ],
+        "orderId": 3
+    }
+]

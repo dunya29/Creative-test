@@ -1,0 +1,107 @@
+@use "vars";
+.item-notification {
+    padding: 16px 12px;
+    border-bottom: 1px solid var(--primary-border-color);
+    background: transparent;
+    transition: all 0.3s linear;
+    h6 {
+        font-weight: 400;
+        align-self: center;
+        transition: all 0.3s linear;
+        cursor: pointer;
+    }
+    &.unread {
+        background: var(--primary-color);
+        h6 {
+            color: var(--white);
+        }
+        .item-notification__date {
+            color: rgba(var(--primary-bg-color-rgb), 0.7);
+        }
+    }
+    .media-cover {
+        width: 70px;
+        height: 32px;
+        border-radius: 8px;
+        cursor: pointer;
+        &.no-photo {
+            background-size: 24px 24px;
+        }
+    }
+    &__date {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--primary-color);
+        margin-bottom: 8px;
+        transition: all 0.3s linear;
+    }
+    &__row {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+        gap: 8px;
+    }
+}
+.notifications {
+    height: auto;
+    min-height: 110px;
+    max-height: 458px;
+    right: 0;
+    top: 72px;
+    &__top {
+        padding: 16px 12px;
+        display: flex;
+        align-items: center;
+        svg {
+            fill: var(--primary-color);
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+        }
+        span {
+            font-size: 14px;
+        }
+    }
+    &__empty {
+        font-size: 14px;
+        padding: 21px 12px 16px;
+    }
+    &__lbl {
+        font-size: 14px;
+        padding: 0 12px;
+        margin-top: 24px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &__footer {
+        padding: 16px 12px;
+        .main-btn {
+            width: 100%;
+        }
+    }
+    @media (max-width: vars.$bp4) {
+        top: 55px;
+        height: calc(100% - 55px);
+        max-height: calc(100% - 55px);
+    }
+    @media (min-width: vars.$bp4) and (max-height: vars.$bp5) {
+        max-height: calc(100dvh - 90px);
+    }
+}
+.notifications-p {
+    &__lbl {
+        font-size: 14px;
+        color: var(--gray-color);
+        margin-top: 24px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    @media (max-width: vars.$bp4) {
+        .item-notification {
+            margin-left: calc(-1 * var(--container-offset));
+            margin-right: calc(-1 * var(--container-offset));
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@use "vars";
+.search-form {
+    width: 100%;
+    &.has-icon {
+        .item-form input {
+            padding-left: 48px;
+        }
+    }
+    &.has-reset {
+        .item-form:not(:last-child) input {
+            padding-right: 152px;
+        }
+    }
+    .item-form {
+        margin-bottom: 0;
+        input {
+            border-color: var(--primary-bg-light-color);
+            &:focus {
+                border-color: var(--primary-color);
+            }
+        }
+    }
+    &__inner {
+        position: relative;
+    }
+    &__icon {
+        fill: var(--gray-color);
+        position: absolute;
+        top: 50%;
+        left: 16px;
+        width: 20px;
+        height: 20px;
+        transform: translateY(-50%);
+    }
+    &__reset {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+    }
+}

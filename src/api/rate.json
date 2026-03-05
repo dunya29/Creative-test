@@ -1,0 +1,246 @@
+[
+    {
+        "year": 2023,
+        "metrics": [
+            {
+                "name": "Актуальность проекта",
+                "shortName": "Актуальность",
+                "translitName": "relevance",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Уникальность проекта",
+                "shortName": "Уникальность",
+                "translitName": "uniqueness",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Реалистичность проекта",
+                "shortName": "Реалистичность",
+                "translitName": "feasibility",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Наличие соц-культ. эффектов",
+                "shortName": "Соц.культурный эффект",
+                "translitName": "socioCultImpact",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Наличие экономического эффекта",
+                "shortName": "Экономический эффект",
+                "translitName": "economicImpact",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Потенциал и компетенции команды проекта",
+                "shortName": "Компетенции команды",
+                "translitName": "teamPotential",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Влияние проекта на креативные сообщества",
+                "shortName": "Влияния на сообщества",
+                "translitName": "impactOnCreativeComm",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Собственный вклад команды в проект",
+                "shortName": "Собственный вклад",
+                "translitName": "teamsContribution",
+                "value": 1,
+                "coefficient": 1
+            }
+        ]
+    },
+    {
+        "year": 2024,
+        "metrics": [
+            {
+                "name": "Актуальность проекта",
+                "shortName": "Актуальность",
+                "translitName": "relevance",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Уникальность проекта",
+                "shortName": "Уникальность",
+                "translitName": "uniqueness",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Реалистичность проекта",
+                "shortName": "Реалистичность",
+                "translitName": "feasibility",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Наличие соц-культ. эффектов",
+                "shortName": "Соц.культурный эффект",
+                "translitName": "socioCultImpact",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Наличие экономического эффекта",
+                "shortName": "Экономический эффект",
+                "translitName": "economicImpact",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Потенциал и компетенции команды проекта",
+                "shortName": "Компетенции команды",
+                "translitName": "teamPotential",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Влияние проекта на креативные сообщества",
+                "shortName": "Влияния на сообщества",
+                "translitName": "impactOnCreativeComm",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Собственный вклад команды в проект",
+                "shortName": "Собственный вклад",
+                "translitName": "teamsContribution",
+                "value": 1,
+                "coefficient": 1
+            }
+        ]
+    },
+    {
+        "year": 2025,
+        "metrics": [
+            {
+                "name": "Актуальность проекта",
+                "shortName": "Актуальность",
+                "translitName": "relevance",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Уникальность проекта",
+                "shortName": "Уникальность",
+                "translitName": "uniqueness",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Реалистичность проекта",
+                "shortName": "Реалистичность",
+                "translitName": "feasibility",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Наличие соц-культ. эффектов",
+                "shortName": "Соц.культурный эффект",
+                "translitName": "socioCultImpact",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Наличие экономического эффекта",
+                "shortName": "Экономический эффект",
+                "translitName": "economicImpact",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Потенциал и компетенции команды проекта",
+                "shortName": "Компетенции команды",
+                "translitName": "teamPotential",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Влияние проекта на креативные сообщества",
+                "shortName": "Влияния на сообщества",
+                "translitName": "impactOnCreativeComm",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Собственный вклад команды в проект",
+                "shortName": "Собственный вклад",
+                "translitName": "teamsContribution",
+                "value": 1,
+                "coefficient": 1
+            }
+        ]
+    },
+    {
+        "year": 2026,
+        "metrics": [
+            {
+                "name": "Актуальность проекта",
+                "shortName": "Актуальность",
+                "translitName": "relevance",
+                "value": 1,
+                "coefficient": 1.2
+            },
+            {
+                "name": "Уникальность проекта",
+                "shortName": "Уникальность",
+                "translitName": "uniqueness",
+                "value": 1,
+                "coefficient": 0.8
+            },
+            {
+                "name": "Реалистичность проекта",
+                "shortName": "Реалистичность",
+                "translitName": "feasibility",
+                "value": 1,
+                "coefficient": 1.2
+            },
+            {
+                "name": "Наличие соц-культ. эффектов",
+                "shortName": "Соц.культурный эффект",
+                "translitName": "socioCultImpact",
+                "value": 1,
+                "coefficient": 1.2
+            },
+            {
+                "name": "Наличие экономического эффекта",
+                "shortName": "Экономический эффект",
+                "translitName": "economicImpact",
+                "value": 1,
+                "coefficient": 1
+            },
+            {
+                "name": "Потенциал и компетенции команды проекта",
+                "shortName": "Компетенции команды",
+                "translitName": "teamPotential",
+                "value": 1,
+                "coefficient": 0.9
+            },
+            {
+                "name": "Влияние проекта на креативные сообщества",
+                "shortName": "Влияния на сообщества",
+                "translitName": "impactOnCreativeComm",
+                "value": 1,
+                "coefficient": 0.9
+            },
+            {
+                "name": "Собственный вклад команды в проект",
+                "shortName": "Собственный вклад",
+                "translitName": "teamsContribution",
+                "value": 1,
+                "coefficient": 0.8
+            }
+        ]
+    }
+]

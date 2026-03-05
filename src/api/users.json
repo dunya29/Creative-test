@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "email": "user1@mail.ru",
+        "name": "User1",
+        "password": "admin11",
+        "userRole": "manager",
+        "emailVerified": true,
+        "disable": false
+    },
+    {
+        "id": 2,
+        "email": "user2@mail.ru",
+        "name": "User2",
+        "password": "admin11",
+        "userRole": "expert",
+        "emailVerified": true,
+        "disable": false
+    },
+    {
+        "id": 3,
+        "email": "user3@mail.ru",
+        "name": "User3",
+        "password": "admin11",
+        "userRole": "user",
+        "emailVerified": true,
+        "disable": false
+    },
+    {
+        "id": 4,
+        "email": "user4@mail.ru",
+        "name": "User4",
+        "password": "admin11",
+        "userRole": "workingGroup",
+        "emailVerified": true,
+        "disable": false
+    },
+    {
+        "id": 5,
+        "email": "user5@mail.ru",
+        "name": "User5",
+        "password": "admin11",
+        "userRole": "user",
+        "emailVerified": false,
+        "disable": false
+    },
+    {
+        "id": 6,
+        "email": "user6@mail.ru",
+        "name": "User6",
+        "password": "admin11",
+        "userRole": "user",
+        "emailVerified": true,
+        "disable": true
+    },
+    {
+        "id": 7,
+        "email": "user7@mail.ru",
+        "name": "User7",
+        "password": "admin11",
+        "userRole": "expertSpecComp",
+        "emailVerified": true,
+        "disable": false
+    }
+]

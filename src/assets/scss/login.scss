@@ -1,0 +1,140 @@
+@use "vars";
+.log-p {
+    height: 100dvh;
+    background:
+        url("../images/content/webp/log-bg.webp") center/cover,
+        no-repeat;
+    overflow: hidden;
+    display: flex;
+    .form {
+        width: 100%;
+    }
+    .custom-scroll {
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+    }
+    &--log {
+        .log-p__content {
+            width: 50%;
+            max-width: 50%;
+            height: 100%;
+            margin: 0 0 0 auto;
+            border-radius: 0;
+        }
+    }
+    &__content {
+        width: 100%;
+        max-width: 580px;
+        max-height: 100%;
+        padding: 40px var(--container-offset);
+        display: flex;
+        overflow: auto;
+        border-radius: 12px;
+        background: var(--white);
+        margin: auto;
+    }
+    &__inner {
+        width: 100%;
+        max-width: 460px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__top {
+        margin-bottom: 24px;
+        text-align: center;
+        a {
+            color: var(--primary-color);
+            &.current {
+                color: var(--text-black);
+            }
+        }
+        p {
+            font-weight: 500;
+            margin-top: 12px;
+        }
+    }
+    &__btns {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: -4px;
+        .btn {
+            flex: 1;
+            margin: 4px;
+        }
+    }
+    &__noty {
+        margin-top: 25px;
+        p {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media (max-width: vars.$bp1) {
+        &__content {
+            max-width: 520px;
+        }
+        &__inner {
+            max-width: 400px;
+        }
+    }
+    @media (max-width: vars.$bp3) {
+        &--log {
+            .log-p__content {
+                width: 60%;
+                max-width: 60%;
+            }
+        }
+    }
+    @media (max-width: vars.$bp4) {
+        h1 {
+            font-size: 20px;
+        }
+        &__content {
+            width: 100%;
+            max-width: 100%;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            margin: auto 0 0;
+            border-radius: 12px 12px 0 0;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        &--log {
+            .log-p__content {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                margin: auto 0 0;
+            }
+        }
+    }
+    @media (max-width: vars.$bp5) {
+        &__noty {
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
+.account-form {
+    max-width: 580px;
+    .form__btns {
+        justify-content: flex-start;
+    }
+    @media (max-width: vars.$bp6) {
+        .form__btns .btn {
+            width: 100%;
+        }
+    }
+}

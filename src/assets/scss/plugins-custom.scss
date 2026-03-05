@@ -1,0 +1,60 @@
+@use "vars";
+.simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1 !important;
+}
+.simplebar-scrollbar:before {
+    background: var(--primary-color-active) !important;
+    border-radius: 20px !important;
+}
+.simplebar-track.simplebar-horizontal {
+    @media (max-width: vars.$bp4) {
+        display: none;
+    }
+}
+.simplebar-horizontal .simplebar-scrollbar:before {
+    height: 6px !important;
+    opacity: 1 !important;
+    @media (max-width: vars.$bp2) {
+        height: 4px !important;
+    }
+}
+.simplebar-track.simplebar-vertical {
+    width: 8px !important;
+}
+.simplebar-vertical .simplebar-scrollbar:before {
+    width: 6px !important;
+    @media (max-width: vars.$bp2) {
+        width: 4px !important;
+    }
+}
+.v3dp__datepicker {
+    --popout-bg-color: var(--primary-bg-light-color) !important;
+    --box-shadow: 0 0 2px var(--primary-color) !important;
+    --text-color: var(--text-black) !important;
+    --border-radius: 12px !important;
+    --heading-hover-color: var(--primary-bg-light-color) !important;
+    --elem-hover-color: var(--text-white) !important;
+    --elem-hover-bg-color: var(--primary-color) !important;
+    --elem-selected-color: var(--text-white) !important;
+    --elem-selected-bg-color: var(--primary-color) !important;
+    --elem-current-outline-color: var(--primary-color) !important;
+    --elem-border-radius: 8px !important;
+    --divider-color: var(--primary-bg-light-color) !important;
+}
+.v3dp__heading__center {
+    text-transform: capitalize;
+}
+.v3dp__popout {
+    top: calc(100% + 10px);
+    right: 0;
+    border: 1px solid var(--primary-color);
+}
+.v3dp__elements button {
+    padding: 0 !important;
+}
+.v3dp__elements button span {
+    width: 35px;
+    height: 35px !important;
+    line-height: 35px !important;
+    margin-left: 2px;
+}

@@ -1,0 +1,41 @@
+@use "vars";
+.waves-p,.register-p {
+    &__years {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: -4px;
+        & > * {
+            white-space: nowrap;
+            margin: 4px;
+        }
+    }
+    &__empty,
+    &__wrapper {
+        margin-top: 24px;
+    }
+    @media (max-width: vars.$bp4) {
+        &__years {
+            flex-wrap: nowrap;
+            margin: 0 calc(var(--container-offset) * -1);
+            overflow: auto;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            & > * {
+                min-width: 109px;
+                &:first-child {
+                    margin: 0 4px 0 var(--container-offset) !important;
+                }
+                &:last-child {
+                    margin: 0 var(--container-offset) 0 4px;
+                }
+            }
+        }
+        &__empty,
+        &__wrapper {
+            margin-top: 20px;
+        }
+    }
+}
