@@ -35,4 +35,4 @@ jobs:
           REMOTE_HOST: ${{ secrets.PROD_HOST }}
           REMOTE_DIR: ${{ secrets.PROD_DIR }}
         run: |
-          rsync -avz --exclude=".htaccess" dist/ $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/
+          rsync -avz --progress --exclude=".htaccess" dist/ $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/
