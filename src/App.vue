@@ -24,7 +24,7 @@
 </script>
 
 <template>
-	<simplebar class="page-scroll">
+	<simplebar class="page-scroll" style="background: red;">
 		<Header v-if="storeCommon.hasHeader" />
 		<RouterView v-slot="{ Component, route }">
 			<transition :name="route.meta.transition || 'fadeUp'" mode="out-in">
