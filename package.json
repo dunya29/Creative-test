@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "vite build --mode test",
-    "production": "vite build --mode production",
+    "build:test": "vite build --mode test",
+    "build:production": "vite build --mode production",
     "imageURL": "vite imageURL",
     "lint": "eslint . --fix",
     "format": "prettier --write src/",
