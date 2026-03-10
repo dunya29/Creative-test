@@ -32,7 +32,7 @@ jobs:
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
           ssh-keyscan -H ${{ secrets.PROD_HOST }} >> ~/.ssh/known_hosts
 
@@ -45,11 +45,9 @@ jobs:
         run: |
           RELEASE=$(date +%Y%m%d%H%M%S)
 
-          ssh -i ~/.ssh/id_ed25519 $REMOTE_USER@$REMOTE_HOST "
-            mkdir -p $REMOTE_DIR/releases/$RELEASE
-          "
-          rsync -avz --progress --exclude=".htaccess" dist/  \
+          ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST \
+            "mkdir -p $REMOTE_DIR/releases/$RELEASE"
+          rsync -avz --progress -e "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no" --exclude=".htaccess" dist/  \
             $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR/releases/$RELEASE/
-          ssh -i ~/.ssh/id_ed25519 $REMOTE_USER@$REMOTE_HOST "
-            ln -sfn $REMOTE_DIR/releases/$RELEASE $REMOTE_DIR/current
-          "
+          ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_HOST \
+            "ln -sfn $REMOTE_DIR/releases/$RELEASE $REMOTE_DIR/current"
